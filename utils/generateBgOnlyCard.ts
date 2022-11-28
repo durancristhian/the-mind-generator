@@ -2,11 +2,15 @@ import { readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 import { Browser } from "puppeteer";
 
-export const generateBgOnlyCard = async (
-  browser: Browser,
-  concept: "lives" | "levels" | "stars",
-  fileName: string
-) => {
+export const generateBgOnlyCard = async ({
+  browser,
+  concept,
+  fileName,
+}: {
+  browser: Browser;
+  concept: "lives" | "levels" | "stars";
+  fileName: string;
+}) => {
   const page = await browser.newPage();
 
   await page.setViewport({ width: 600, height: 840 });

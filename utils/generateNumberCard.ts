@@ -3,11 +3,15 @@ import { join } from "path";
 import { Browser } from "puppeteer";
 import { addDotIfNeeded } from "./addDotIfNeeded";
 
-export const generateNumberCard = async (
-  browser: Browser,
-  fileName: string,
-  text: string
-) => {
+export const generateNumberCard = async ({
+  browser,
+  fileName,
+  text,
+}: {
+  browser: Browser;
+  fileName: string;
+  text: string;
+}) => {
   const page = await browser.newPage();
 
   await page.setViewport({ width: 600, height: 840 });
@@ -126,5 +130,5 @@ export const generateNumberCard = async (
     }
   );
 
-  await page.close();
+  /* await page.close(); */
 };

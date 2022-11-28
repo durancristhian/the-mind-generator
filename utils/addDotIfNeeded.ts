@@ -1,4 +1,4 @@
-export function addDotIfNeeded(n: string) {
+export const addDotIfNeeded = (n: string) => {
   return [
     "6",
     "9",
@@ -15,4 +15,4 @@ export function addDotIfNeeded(n: string) {
   ].includes(n)
     ? `${n}.`
     : `${n}`;
-}
+};

@@ -1,0 +1,16 @@
+{
+  "name": "the-mind-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "puppeteer": "^19.3.0",
+    "ts-node": "^10.9.1"
+  }
+}

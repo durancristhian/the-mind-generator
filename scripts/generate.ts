@@ -1,7 +1,7 @@
 import puppeteer, { Browser } from "puppeteer";
-import { generateBgOnlyCard } from "./utils/generateBgOnlyCard";
-import { generateNumberCard } from "./utils/generateNumberCard";
-import { generateTextAndBgCard } from "./utils/generateTextAndBgCard";
+import { generateBgOnlyCard } from "../utils/generateBgOnlyCard";
+import { generateNumberCard } from "../utils/generateNumberCard";
+import { generateTextAndBgCard } from "../utils/generateTextAndBgCard";
 
 const run = async () => {
   const browser = await puppeteer.launch();

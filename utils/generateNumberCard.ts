@@ -82,11 +82,13 @@ export const generateNumberCard = async ({
   .card-number-bottom-left {
     bottom: 60px;
     left: 60px;
+    transform: rotate(180deg);
   }
   
   .card-number-bottom-right {
     bottom: 60px;
     right: 60px;
+    transform: rotate(180deg);
   }`;
 
   const Montserrat = readFileSync(

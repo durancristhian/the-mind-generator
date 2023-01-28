@@ -5,9 +5,9 @@ import { generatePDF } from "../utils/generatePDF";
 import { generateTextAndBgCard } from "../utils/generateTextAndBgCard";
 import { getArray } from "../utils/getArray";
 
-const NUMBER_CARDS_AMOUNT = 127;
-const LIVE_CARDS_AMOUNT = 10;
-const STAR_CARDS_AMOUNT = 6;
+const NUMBER_CARDS_AMOUNT = 100;
+const LIVE_CARDS_AMOUNT = 5;
+const STAR_CARDS_AMOUNT = 3;
 const LEVEL_CARDS_AMOUNT = 12;
 
 const run = async () => {
@@ -28,9 +28,6 @@ const run = async () => {
 
   console.log("Generating printable numbers cards (51-100)");
   await generateNumbersPDF({ start: 51, end: 100 }, "numbers-51-100");
-
-  console.log("Generating printable numbers cards (101-127)");
-  await generateNumbersPDF({ start: 101, end: 127 }, "numbers-101-127");
 
   console.log("Generating printable lives cards");
   await generateLivesPDF();

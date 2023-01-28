@@ -133,4 +133,5 @@ dist
 .DS_Store
 
 # Specific to this project
-build
+build/**/*.png
+build/**/*.pdf
